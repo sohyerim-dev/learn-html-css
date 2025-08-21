@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/public/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <title>어휘 요소들</title>
+  </head>
+  <body>
+    <a href="/index.html">Index로 이동</a>
+    <h1>어휘 요소들</h1>
+    <h2>강조</h2>
+    <p>&lt;strong&gt;은 긴급한, 중요한 강조를 나타냄</p>
+    <p>&lt;em&gt;은 일반적인 강조를 나타냄</p>
+    <p>&lt;b&gt;은 주변 콘텐츠와 구분한 목적으로 사용</p>
+    <p>&lt;i&gt;은 주변 콘텐츠와 구분한 목적으로 사용</p>
+    <h2>UI 실습</h2>
+    <h1 class="sr-only">이듬 강좌</h1>
+    <div>
+      <h2 class="sr-only">후기</h2>
+      <p>
+        <em>무엇이 중요한지 알게된 <em></em>시간!</em>
+      </p>
+      <p>제가 들었던 해외 튜토리얼에 비해 <strong>시맨틱한 마크업</strong>과 <strong>접근성</strong> 비중이 크게 다뤄져 좋았습니다. 많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요. 무엇이 중요한지 알게되어 많은 도음이 되었습니다.</p>
+      <p>
+        <span aria-hidden="true">★★★★★</span>
+        <span class="sr-only">평점</span><b>5점</b><i>우정민</i>
+      </p>
+    </div>
+  </body>
+</html>
