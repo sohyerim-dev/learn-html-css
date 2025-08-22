@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/public/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <title>Video 관련 요소</title>
+  </head>
+  <body>
+    <a href="/index.html">Index로 이동</a>
+    <h1>Video 관련 요소</h1>
+    <video controls autoplay muted poster="/src/assets/video/poster.jpg">
+      <source src="/src/assets/video/google-developer-stories.webm" type="video/webm" />
+      <source src="/src/assets/video/google-developer-stories.ogg" type="video/ogg" />
+      <source src="/src/assets/video/google-developer-stories.mov" type="video/mov" />
+      <source src="/src/assets/video/google-developer-stories.mp4" type="video/mp4" />
+      <track src="/src/assets/video/stories-en.vtt" kind="captions" srclang="en" label="English Caption" />
+      <track src="/src/assets/video/stories-ko.vtt" kind="captions" srclang="ko" label="한국어 자막" />
+    </video>
+    <hr />
+    <video src="/src/assets/video/google-developer-stories.mp4" controls autoplay muted poster="/src/assets/video/poster.jpg">
+      <track src="/src/assets/video/stories-en.vtt" kind="captions" srclang="en" label="English Caption" />
+    </video>
+  </body>
+</html>
