@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/public/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <title>테이블 관련 요소</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid currentColor;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/index.html">Index로 이동</a>
+    <h1>테이블 관련 요소</h1>
+    <table>
+      <tr>
+        <th scope="col">이름</th>
+        <th scope="col">국어</th>
+        <th scope="col">영어</th>
+      </tr>
+      <tr>
+        <th scope="row">홍길동</th>
+        <td>90</td>
+        <td>80</td>
+      </tr>
+      <tr>
+        <th scope="row">이영희</th>
+        <td>70</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <th scope="row">평균</th>
+        <td>80</td>
+        <td>90</td>
+      </tr>
+    </table>
+    <hr />
+    <table style="border: 1px solid currentColor">
+      <tr>
+        <th id="name">이름</th>
+        <th id="ko">국어</th>
+        <th id="en">영어</th>
+      </tr>
+      <tr>
+        <th id="hong">홍길동</th>
+        <td headers="hong ko">90</td>
+        <td headers="hong en">80</td>
+      </tr>
+      <tr>
+        <th id="lee">이영희</th>
+        <td headers="lee ko">70</td>
+        <td headers="lee en">100</td>
+      </tr>
+      <tr>
+        <th id="ave">평균</th>
+        <td headers="ave ko">80</td>
+        <td headers="ave en">90</td>
+      </tr>
+      <tr>
+        <th scope="row">평균 합계</th>
+        <td colspan="120">170</td>
+      </tr>
+    </table>
+  </body>
+</html>
