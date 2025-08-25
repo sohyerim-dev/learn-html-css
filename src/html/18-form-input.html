@@ -28,5 +28,34 @@
         <button type="submit">전송</button>
       </fieldset>
     </form>
+
+    <hr />
+    <form method="post" action="https://formspree.io/f/xeqwwbwk">
+      <div>
+        <label for="searchPlace">검색어</label>
+        <input placeholder="검색어를 입력해주세요" type="search" id="searchKeyword" name="searchKeyword" />
+      </div>
+      <div>
+        <label for="userPhone">전화번호</label>
+        <input required type="tel" id="userPhone" name="userPhone" />
+      </div>
+      <div>
+        <div>
+          <label for="bootcampHtml">HTML</label>
+          <input checked type="checkbox" value="html" id="bootcampHtml" name="bootcamp" />
+        </div>
+        <div>
+          <label for="bootcampCss">CSS</label>
+          <input type="checkbox" value="css" id="bootcampCss" name="bootcamp" />
+        </div>
+        <label> <input checked type="radio" value="classRoom1" name="classRoom" /> 회고 1팀 </label>
+        <label> <input type="radio" value="classRomm2" name="classRoom" /> 회고 2팀 </label>
+      </div>
+      <div>
+        <button type="submit">전송</button>
+        <button type="reset">초기화</button>
+        <button type="button">버튼</button>
+      </div>
+    </form>
   </body>
 </html>
