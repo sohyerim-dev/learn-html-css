@@ -1,1 +1,3 @@
-console.log('멋사 프론트엔드 부트캠프 화이팅!');
+document.querySelector('.flip-button').addEventListener('click', () => {
+  document.querySelector('.card').classList.toggle('is-flipped');
+});

@@ -6,7 +6,6 @@
     <link rel="shortcut icon" href="/public/favicon/likelion.ico" type="image/x-icon" />
     <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
     <title>script</title>
-    <script src="/src/html/js/23-script.js"></script>
     <script>
       console.log('15기 화이팅!');
     </script>
@@ -19,9 +18,17 @@
       }
     </style>
     <link rel="stylesheet" href="/src/html/styles/23-script.css" />
+    <script type="module" src="/src/html/js/23-script.js"></script>
   </head>
   <body>
     <a href="/index.html">Index로 이동</a>
     <h1>script 요소</h1>
+    <button type="button" class="flip-button">카드 뒤집기</button>
+    <div class="card-wrapper">
+      <div class="card">
+        <div class="card-face card-face-black"></div>
+        <div class="card-face card-face-white"></div>
+      </div>
+    </div>
   </body>
 </html>
