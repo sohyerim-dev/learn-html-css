@@ -1,0 +1,23 @@
+body {
+  margin: 20px;
+  color: grey;
+}
+
+/* 상속 */
+
+a {
+  color: inherit;
+}
+
+.wrapper {
+  color: purple;
+  border: 1px solid green;
+}
+
+body a + h1 + #coding.wrapper p.like {
+  color: blue;
+}
+
+a + h1 + #coding.wrapper p.like {
+  color: red;
+}
