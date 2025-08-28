@@ -9,7 +9,55 @@ a {
   color: red;
 }
 
+p {
+  border: 2px solid blue;
+  color: gray;
+}
+
 /* 클래스 선택자 */
 .like {
-  background-color: yellow;
+  background-color: var(--yellow);
+  border: 2px dashed green;
+}
+
+p {
+  border: 2px solid blue;
+  color: black;
+}
+
+/* 클래스 선택자를 여러 개 조합하더라도 아이디 선택자의 스타일을 재지정 할 수 없다. 
+아이디 선택자를 지양하자 */
+#lion {
+  background-color: var(--orange);
+}
+
+/* 속성 선택자 */
+a[href^="https://"]
+{
+  color: green;
+}
+
+/* 자손 결합자*/
+.bootcamp p {
+  color: grey;
+}
+
+/* 자식 결합자 */
+.bootcamp > blockquote > p {
+  padding: 50px;
+}
+
+/* 선택자 그룹화 */
+a,
+h1,
+#lion {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* 가상 요소 선택자 */
+h1::before {
+  content: '멋사';
+}
+h1::after {
+  content: '15기';
 }
