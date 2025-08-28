@@ -1,14 +1,7 @@
 body {
   margin: 20px;
 }
-
-h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  margin-bottom: 10px;
-}
-
 /* 글자 크기 */
-
 .wrapper {
   font-size: 15px;
 }
@@ -18,4 +11,49 @@ h1 {
 
 .like {
   font-size: 5vw;
+}
+
+/* 글자 스타일 */
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+/* 줄높이 */
+.wrapper blockquote {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.like {
+  font-size: 30px;
+}
+
+/* 자간 조정하기 */
+h1 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.6;
+}
+
+/* 정렬 */
+.bootcamp {
+  height: 200px;
+  border: 1px solid red;
+  padding: 20px;
+  background-color: var(--yellow);
+  text-align: center;
+  /* line-height: 160px; */
+  align-content: center;
+}
+
+/* 글자 그림자 */
+.bootcamp {
+  text-shadow:
+    1px 1px 2px red,
+    2px 2px 2px orange,
+    3px 3px 2px yellow,
+    4px 4px 2px green;
 }
