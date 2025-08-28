@@ -1,0 +1,15 @@
+/* 전체 선택자 */
+* {
+  font-size: 36px;
+}
+
+/* 요소 선택자 */
+a {
+  text-decoration: none;
+  color: red;
+}
+
+/* 클래스 선택자 */
+.like {
+  background-color: yellow;
+}
