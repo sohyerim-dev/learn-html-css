@@ -1,0 +1,34 @@
+body {
+  margin: 20px;
+}
+
+/* float */
+.wrapper {
+  background-color: #ffc;
+  width: 500px;
+  margin: 20px 0;
+  display: flow-root;
+
+  div {
+    border: 1px solid currentColor;
+    height: 80px;
+    margin: 10px;
+  }
+
+  .box1 {
+    background-color: orangered;
+    float: left;
+  }
+  .box2 {
+    background-color: lightgreen;
+    float: left;
+  }
+  .box3 {
+    background-color: pink;
+    float: left;
+  }
+  .box4 {
+    background-color: aqua;
+    float: left;
+  }
+}
