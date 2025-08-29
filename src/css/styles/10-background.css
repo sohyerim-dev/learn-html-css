@@ -1,0 +1,20 @@
+body {
+  /* background-color: skyblue;
+  background-image: url('/src/assets/images/sun.png'), url('/src/assets/images/cloud.png');
+  background-repeat: no-repeat;
+  background-size:
+    100px 100px,
+    200px 150px;
+  background-position:
+    50% 30%,
+    50% 40%;
+  background-attachment: fixed; */
+}
+
+/* background 속성으로 축약해서 표현하기 */
+
+body {
+  background:
+    url('/src/assets/images/sun.png') no-repeat 50% 30% /100px 100px fixed,
+    #ffc url('/src/assets/images/cloud.png') no-repeat 50% 40% /200px 150px fixed;
+}
