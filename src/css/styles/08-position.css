@@ -1,0 +1,60 @@
+body {
+  margin: 20px;
+}
+
+.wrapper {
+  width: 500px;
+  border: 2px solid red;
+  position: relative;
+}
+/* position : relative */
+.like {
+  background-color: var(--pink);
+  position: relative;
+  left: 50px;
+  bottom: 20px;
+}
+
+/* position: absolute */
+.bootcamp {
+  background-color: var(--lemon);
+  position: absolute;
+  left: 50px;
+  top: 100px;
+}
+
+/* position: fixed */
+.school {
+  background-color: var(--mint);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+/* position: sticky */
+h1 {
+  background-color: var(--blue);
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+/* z-index 속성 */
+
+.frontend,
+.euid {
+  position: relative;
+  padding: 10px;
+}
+
+.frontend {
+  background-color: orange;
+  left: 50px;
+  top: 20px;
+  z-index: 100;
+}
+
+.euid {
+  background-color: blueviolet;
+  z-index: auto;
+}
