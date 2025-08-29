@@ -1,0 +1,42 @@
+body {
+  margin: 20px;
+}
+
+/* list-style-type 속성 */
+
+.likelion {
+  background-color: #fcf;
+}
+
+.likelion ol {
+  padding-left: 40px;
+  list-style-type: square;
+}
+
+/* list-style-position */
+
+.bootcamp {
+  background-color: #ffc;
+}
+
+.bootcamp ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+/* list-style-image */
+.frontend {
+  background-color: #cff;
+}
+
+.frontend ul {
+  padding-left: 40px;
+  /* list-style-position: outside;
+  list-style-image: url('/src/assets/thumbnail/new.png'); */
+}
+
+/* list-style 단축 속성 사용 */
+
+.frontend ul {
+  list-style: outside url('/src/assets/thumbnail/new.png');
+}
