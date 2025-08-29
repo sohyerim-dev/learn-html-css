@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Nesting</title>
+    <link rel="shortcut icon" href="/public/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <link rel="preload" as="font" href="/public/font/suit/SUIT-Variable.woff2" />
+    <link rel="stylesheet" href="/public/font/suit/SUIT-Variable.css" />
+    <link rel="stylesheet" href="/src/common/index.css" />
+    <link rel="stylesheet" href="/src/css/styles/07-nesting.css" />
+  </head>
+  <body>
+    <a href="/index.html">Index로 이동</a>
+    <h1>CSS Nesting</h1>
+    <div class="likelion">
+      <ul>
+        <li>Nesting 목록1</li>
+        <li>Nesting 목록2</li>
+        <li>Nesting 목록3</li>
+        <li>
+          Nesting 목록4
+          <ul>
+            <li>하위 목록</li>
+            <li>하위 목록</li>
+            <li class="sub-last">하위 목록</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
