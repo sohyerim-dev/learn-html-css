@@ -1,0 +1,116 @@
+body {
+  margin: 20px;
+}
+
+/* 블록 상자 */
+h1 {
+  background-color: #fcf;
+}
+
+.bootcamp {
+  border: 2px solid red;
+  width: 500px;
+}
+
+p {
+  background-color: #cff;
+  margin-block: 10px;
+}
+
+/* 인라인 상자 */
+strong {
+  background-color: #ffc;
+  width: 300px;
+  display: inline-block;
+}
+
+/* 안쪽 여백 padding */
+
+.like {
+  padding: 10px;
+}
+
+.lion {
+  padding: 10px 20px;
+}
+
+.love {
+  padding-left: 20%;
+}
+
+.front {
+  padding-left: 3em;
+}
+
+.end {
+  padding-left: 20%;
+  padding-top: 20%;
+}
+
+/* 바깥쪽 여백 margin */
+
+.euid {
+  border: 2px solid green;
+  width: 800px;
+  margin: 0 auto;
+}
+h1 {
+  margin: 20px -20px;
+}
+
+p {
+  margin: 20px 0;
+}
+
+.like {
+  margin-bottom: 30px;
+}
+
+.bootcamp {
+  margin: 0 auto;
+}
+
+/* 음수 margin */
+
+.container {
+  border: 2px solid blueviolet;
+  margin: 20px auto;
+  width: 800px;
+  /* display: flow-root; */
+  display: flex;
+}
+
+.container div {
+  width: 80px;
+  height: 80px;
+  border: 1px solid red;
+  border-radius: 50%;
+  align-content: center;
+  padding-left: 1em;
+
+  /* float: left; */
+}
+
+.container div:nth-child(n + 2) {
+  margin-left: -20px;
+}
+.container div:first-child {
+  background-color: var(--yellow);
+}
+
+.container div:nth-child(2) {
+  background-color: var(--pink);
+}
+
+.container div:nth-child(3) {
+  background-color: var(--aqua);
+}
+
+.container div:last-child {
+  background-color: var(--mint);
+}
+
+.container div:hover {
+  z-index: 100;
+  background-color: red;
+}
