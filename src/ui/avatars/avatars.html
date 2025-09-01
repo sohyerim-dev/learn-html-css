@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>아바타</title>
+    <link rel="shortcut icon" href="/public/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <link rel="preload" as="font" type="font/woff2" href="/public/font/suit/SUIT-Variable.woff2" crossorigin />
+    <link rel="stylesheet" href="/public/font/suit/SUIT-Variable.css" />
+    <link rel="stylesheet" href="/src/common/index.css" />
+    <link rel="stylesheet" href="/src/ui/avatars/avatars.css" />
+    <script type="module" src="/src/ui/avatars/avatars.js"></script>
+  </head>
+  <body>
+    <a href="/index.html">Index로 이동</a>
+    <h1>아바타(상태 디자인)</h1>
+    <h2>아바타 레이아웃</h2>
+    <ul class="avatar-list">
+      <li>
+        <button type="button" aria-label="offline" class="avatar-button">
+          <img src="/src/assets/face/face1.jpg" alt="민지" />
+        </button>
+      </li>
+      <li>
+        <button type="button" aria-label="offline" class="avatar-button">
+          <img src="/src/assets/face/face2.jpg" alt="혜린" />
+        </button>
+      </li>
+      <li>
+        <button type="button" aria-label="online" class="avatar-button">
+          <img src="/src/assets/face/face3.jpg" alt="혜인" />
+        </button>
+      </li>
+      <li>
+        <button type="button" aria-label="online" class="avatar-button">
+          <img src="/src/assets/face/face4.jpg" alt="하니" />
+        </button>
+      </li>
+      <li>
+        <button type="button" aria-label="online" class="avatar-button">
+          <img src="/src/assets/face/face5.jpg" alt="시온" />
+        </button>
+      </li>
+      <li>
+        <button type="button" aria-label="online" class="avatar-button">
+          <img src="/src/assets/face/face6.jpg" alt="리쿠" />
+        </button>
+      </li>
+      <li>
+        <button type="button" aria-label="offline" class="avatar-button">
+          <img src="/src/assets/face/face7.jpg" alt="사쿠야" />
+        </button>
+      </li>
+      <li>
+        <button type="button" aria-label="offline" class="avatar-button">
+          <img src="/src/assets/face/face8.jpg" alt="유우시" />
+        </button>
+      </li>
+    </ul>
+    <h2>인터렉션이 없는 경우</h2>
+    <!-- 아바타 컴포넌트 (온라인 상태)-->
+    <figure class="avatar-img">
+      <img src="/src/assets/face/face5.jpg" alt="사용자 이름" />
+      <figcaption><em class="sr-only">온라인</em><span class="on"></span></figcaption>
+    </figure>
+    <!-- 아바타 컴포넌트 (오프라인 상태)-->
+    <figure class="avatar-img">
+      <img src="/src/assets/face/face1.jpg" alt="사용자 이름" />
+      <figcaption><em class="sr-only">오프라인</em><span class="off"></span></figcaption>
+    </figure>
+    <hr />
+    <h2>인터렉션이 있는 경우</h2>
+    <button type="button" aria-label="online" class="avatar-button">
+      <img src="/src/assets/face/face3.jpg" alt="사용자 이름" />
+    </button>
+  </body>
+</html>
