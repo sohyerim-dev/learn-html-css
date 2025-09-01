@@ -18,3 +18,22 @@ body {
     url('/src/assets/images/sun.png') no-repeat 50% 30% /100px 100px fixed,
     #ffc url('/src/assets/images/cloud.png') no-repeat 50% 40% /200px 150px fixed;
 }
+
+/* linear gradient */
+
+.like {
+  background-color: pink;
+  background-image: linear-gradient(to top, Red, green);
+}
+
+.lion {
+  margin-top: 50px;
+  background-color: pink;
+  background-image: linear-gradient(to top, red, green);
+}
+
+.bootcamp {
+  margin-top: 50px;
+  background-color: pink;
+  background-image: linear-gradient(-45deg, red, green);
+}

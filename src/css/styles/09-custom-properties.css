@@ -1,0 +1,20 @@
+@property --text-color {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #f0c;
+}
+
+body {
+  margin: 20px;
+  color: var(--text-color);
+}
+
+div {
+  --text-color: #00f;
+
+  color: var(--text-color);
+}
+
+p {
+  color: var(--text-color);
+}
