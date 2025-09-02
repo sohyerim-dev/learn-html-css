@@ -1,0 +1,100 @@
+body {
+  margin: 20px;
+}
+
+/* 컴포넌트 */
+.term {
+  --accent-color: #296897;
+  --text-size: 14px;
+  /* rem 단위로 하면 html(16px) 기준 */
+
+  background: #ffc;
+  display: flow-root;
+  font-size: 14px;
+
+  .subject {
+    font-weight: 600;
+    color: var(--accent-color);
+    font-size: 1.2em;
+  }
+
+  .subject,
+  .description {
+    float: right;
+    width: calc(100% - 76px);
+  }
+
+  .thumbnail {
+    float: left;
+    margin-right: 16px;
+  }
+
+  .description {
+    margin-top: 10px;
+    font-size: 1em;
+  }
+}
+
+/* .ui-component {
+  border: 1px solid #999;
+  box-sizing: border-box;
+  border-radius: 3%;
+  width: fit-content;
+  background: linear-gradient(to bottom, grey, white);
+
+  .term {
+    padding: 16px 16px 0 16px;
+
+    width: 250px;
+
+    display: flow-root;
+
+    &.web-a11y {
+      padding-bottom: 16px;
+    }
+    .subject {
+      width: 142px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #296897;
+    }
+
+    .thumbnail {
+      width: 60px;
+      img {
+        width: 100%;
+        display: block;
+        clear: both;
+      }
+    }
+
+    .description {
+      margin-top: 4px;
+      float: right;
+      width: 142px;
+      font-size: 14px;
+    }
+  }
+
+  .web-standards {
+    .subject,
+    .description {
+      float: right;
+    }
+
+    .thumbnail {
+      float: left;
+    }
+  }
+
+  .web-a11y {
+    .subject,
+    .description {
+      float: left;
+    }
+
+    .thumbnail {
+      float: right;
+    }
+  }
+} */
