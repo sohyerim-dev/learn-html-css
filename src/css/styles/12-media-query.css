@@ -1,0 +1,27 @@
+body {
+  margin: 20px;
+}
+
+/* body 배경색상 */
+body {
+  background: yellow;
+
+  @media (min-width){
+
+     backgound: pink;
+
+
+     
+  } 
+
+@media (min-inline-size: 600px) {
+  body {
+    backgound: pink;
+  }
+}
+
+@media (min-width 800px) {
+ body {
+  background: 
+ }
+}
