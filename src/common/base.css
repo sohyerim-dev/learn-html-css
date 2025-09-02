@@ -2,3 +2,9 @@
 body {
   font-family: 'SUIT Variable', sans-serif;
 }
+
+/* 하이퍼링크 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
