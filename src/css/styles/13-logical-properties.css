@@ -1,0 +1,69 @@
+body {
+  margin: 20px;
+}
+
+/* width/height - inline-size/block-size */
+
+.like {
+  background: yellow;
+  inline-size: 400px;
+  /* width: 500px; */
+  /* 인라인 방향 (가로) */
+  block-size: 100px;
+  /* height: 100px; */
+  /* 블록 방향 (세로) */
+}
+
+/* margin/padding - top, right, bottom, left */
+.lion {
+  background: pink;
+  padding-block: 20px;
+  /* padding-block-start: 20px;
+  padding-block-end: 20px; */
+  margin-inline: 20px;
+  /* margin-inline-start: 20px;
+  margin-inline-end: 20px; */
+}
+
+/* float: left or right / start or end */
+.bootcamp {
+  background: aqua;
+
+  em {
+    font-weight: 700;
+    float: inline-start; /*left*/
+  }
+
+  strong {
+    font-weight: 700;
+    float: inline-end; /*right*/
+  }
+}
+
+/* position - top, right, bottom, left / inset */
+.frontend {
+  background: lime;
+  position: relative;
+
+  padding: 20px;
+
+  strong {
+    position: absolute;
+    background: orange;
+    /* top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; */
+    inset: 0;
+  }
+}
+
+/* border */
+.euid {
+  background: rgb(240, 235, 235);
+  padding: 10px;
+  /* border-top: 2px solid red; */
+  border-block-start: 2px solid red;
+  /* border-bottom: 2px dashed blue; */
+  border-block-end: 2px dashed blue;
+}
