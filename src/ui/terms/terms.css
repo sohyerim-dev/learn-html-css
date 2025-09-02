@@ -5,12 +5,10 @@ body {
 /* 컴포넌트 */
 .term {
   --accent-color: #296897;
-  --text-size: 14px;
-  /* rem 단위로 하면 html(16px) 기준 */
+  --text-size: 1rem;
 
-  background: #ffc;
   display: flow-root;
-  font-size: 14px;
+  font-size: var(--text-size);
 
   .subject {
     font-weight: 600;
@@ -26,12 +24,47 @@ body {
 
   .thumbnail {
     float: left;
-    margin-right: 16px;
   }
 
   .description {
-    margin-top: 10px;
+    margin-top: 4px;
     font-size: 1em;
+  }
+}
+
+/* 레이아웃 */
+.terms {
+  --gray-700: #7a7a7a;
+  --gray-600: #cccccc;
+  --gray-500: #eeeeee;
+  --spacing: 1rem;
+
+  background: var(--gray-600) linear-gradient(var(--gray-600), var(--gray-500));
+  border: 1px solid var(--gray-700);
+  border-radius: 10px;
+  padding: var(--spacing);
+
+  .headline {
+    font-size: 1.25rem;
+    /* font-weight: 700; */
+    margin-bottom: var(--spacing);
+  }
+
+  .term {
+    margin-top: calc(var(--spacing) - 4px);
+  }
+
+  & div:nth-child(3) {
+    background: pink;
+
+    .subject,
+    .description {
+      float: left;
+    }
+
+    .thumbnail {
+      float: right;
+    }
   }
 }
 

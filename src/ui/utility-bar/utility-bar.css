@@ -1,0 +1,30 @@
+body {
+  margin: 20px;
+}
+
+.utility-bar {
+  margin: 0 auto;
+  width: 80%;
+  --size-: 8px;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 0;
+
+  li {
+    display: inline-block;
+    /* font-size: 16px; */
+    word-spacing: -4px;
+
+    a,
+    [aria-hidden='true'] {
+      display: inherit;
+      padding: var(--size-);
+      font-size: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
