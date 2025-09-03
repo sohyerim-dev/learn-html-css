@@ -1,0 +1,100 @@
+body {
+  margin: 20px;
+}
+
+h1 {
+  margin-block-end: 20px;
+}
+
+.members-wrapper {
+  block-size: 500px;
+  overflow: auto;
+  text-align: center;
+
+  .number {
+    inline-size: 10%;
+  }
+
+  .name {
+    inline-size: 20%;
+  }
+
+  .mail {
+    inline-size: 30%;
+  }
+
+  .phone {
+    inline-size: 50%;
+  }
+
+  table {
+    border: 1px solid var(--black);
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background: var(--white);
+
+    th {
+      white-space: nowrap;
+    }
+
+    th,
+    td {
+      text-align: center;
+      padding: 0.5em 1em;
+    }
+
+    thead tr {
+      position: sticky;
+      top: 0;
+    }
+
+    thead th,
+    tfoot td {
+      background: var(--black);
+      color: var(--white);
+    }
+
+    tbody tr:nth-child(even) {
+      background: var(--gray);
+    }
+  }
+
+  /* th,
+  td {
+    border: 1px solid blue;
+  } */
+
+  /* 내코드
+  
+  table {
+    border: 2px solid #888;
+    border-collapse: collapse;
+
+    th {
+      padding-block: 10px;
+      position: sticky;
+      top: 0;
+      background: #000;
+      color: #fff;
+      z-index: 100;
+    }
+
+    th,
+    td {
+      padding-inline: 50px;
+    }
+
+    tbody tr:nth-child(odd) {
+      background: #fff;
+    }
+    tbody tr:nth-child(even) {
+      background: #999;
+    }
+
+    tfoot tr {
+      background: #000;
+      color: #fff;
+    }
+  } */
+}
