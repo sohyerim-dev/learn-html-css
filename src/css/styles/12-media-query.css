@@ -6,22 +6,17 @@ body {
 body {
   background: yellow;
 
-  @media (min-width){
-
-     backgound: pink;
-
-
-     
-  } 
-
-@media (min-inline-size: 600px) {
-  body {
-    backgound: pink;
+  @media (min-width: 600px) {
+    background: pink;
   }
-}
 
-@media (min-width 800px) {
- body {
-  background: 
- }
+  /* @media (min-inline-size: 600px) {
+    body {
+      background: pink;
+    }
+  } */
+
+  @media (min-width: 1200px) {
+    background: aqua;
+  }
 }
