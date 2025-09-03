@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>user-status</title>
+    <link rel="shortcut icon" href="/public/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <link rel="preload" as="font" href="/public/font/suit/SUIT-Variable.woff2" />
+    <link rel="stylesheet" href="/public/font/suit/SUIT-Variable.css" />
+    <link rel="stylesheet" href="/src/common/index.css" />
+    <link rel="stylesheet" href="/src/css/styles/user-status.css" />
+  </head>
+  <body>
+    <h1>user-status</h1>
+    <h2>공동 실습 예제</h2>
+    <div class="container">
+      <ul class="user-list">
+        <li>
+          <img src="/src/assets/njz/1.jpeg" tabindex="0" aria-describedby="minji-status-msg" alt="민지 프로필사진" />
+          <dl id="minji-status-msg" class="status">
+            <dt>민지</dt>
+            <dd class="online">접속 중</dd>
+          </dl>
+        </li>
+        <li>
+          <img src="/src/assets/njz/2.jpeg" tabindex="0" aria-describedby="hani-status-msg" alt="하니 프로필사진" />
+          <dl class="status" id="hani-status-msg">
+            <dt>하니</dt>
+            <dd class="online">접속 중</dd>
+          </dl>
+        </li>
+        <li>
+          <img src="/src/assets/njz/3.jpg" tabindex="0" aria-describedby="daniel-stauts-msg" alt="다니엘 프로필사진" />
+          <dl class="status" id="daniel-stauts-msg">
+            <dt>다니엘</dt>
+            <dd class="offline">마지막 접속 시간: 5분 전</dd>
+          </dl>
+        </li>
+        <li>
+          <img src="/src/assets/njz/4.jpg" tabindex="0" aria-describedby="hyelin-status-msg" alt="해린 프로필사진" />
+          <dl class="status" id="hyelin-status-msg">
+            <dt>해린</dt>
+            <dd class="offline">마지막 접속 시간: 1시간 전</dd>
+          </dl>
+        </li>
+        <li>
+          <img src="/src/assets/njz/5.jpg" tabindex="0" ria-describedby="hyein-status-msg" alt="혜인 프로필사진" />
+          <dl class="status" id="hyein-status-msg">
+            <dt>혜인</dt>
+            <dd class="offline">마지막 접속 시간: 1일 전</dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

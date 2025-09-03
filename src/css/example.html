@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .circle {
+      background-color: yellow;
+      inline-size: fit-content;
+    }
+
+    #status_msg {
+      display: none;
+    }
+
+    .circle:hover #status_msg {
+      display: block;
+    }
+
+    .circle:hover #status_msg,
+    .circle:focus #status_msg {
+      display: block;
+    }
+  </style>
+  <body>
+    <div aria-describedby="status_msg" aria-label="민지의 상태메세지 표시창" class="circle" tabindex="0" role="button">
+      <p>...</p>
+      <div id="status_msg">
+        <p>오늘 날씨 너무 좋다.</p>
+      </div>
+    </div>
+  </body>
+</html>
