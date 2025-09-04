@@ -1,0 +1,74 @@
+body {
+  margin: 20px;
+
+  h1 {
+    background: rgba(0, 255, 0, 0.5);
+    position: relative;
+    z-index: 2;
+  }
+  /* Stacking Context */
+  .likelion {
+    background: #ffc;
+    border: 1px solid currentColor;
+    block-size: 200px;
+    position: relative;
+    z-index: 3;
+
+    .bootcamp,
+    .frontend,
+    .euid {
+      border: inherit;
+      inline-size: 50px;
+      aspect-ratio: 1/1;
+    }
+    .bootcamp {
+      background: rgba(255, 0, 0, 0.5);
+      position: absolute;
+      z-index: 1;
+      inset-block-start: -20px;
+      inset-inline-start: 10px;
+    }
+
+    .frontend {
+      background: pink;
+      position: relative;
+      z-index: 3;
+    }
+
+    .euid {
+      background: skyblue;
+      position: absolute;
+      inset-block-start: -30px;
+
+      z-index: 2;
+    }
+  }
+}
+
+.cafe-w {
+  border: 10px solid currentColor;
+  inline-size: 500px;
+  block-size: 200px;
+  position: relative;
+  background: pink;
+  isolation: isolate;
+
+  .hero {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    z-index: -1;
+    inline-size: 90%;
+    offset-block-end: 90%;
+  }
+
+  .star {
+    background: #fff;
+    border-radius: 50%;
+  }
+
+  .text {
+    background: yellow;
+    padding: 1em;
+  }
+}
