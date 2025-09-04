@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexflix Form</title>
+    <link rel="shortcut icon" href="/public/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <link rel="preload" as="font" href="/public/font/suit/SUIT-Variable.woff2" />
+    <link rel="stylesheet" href="/public/font/suit/SUIT-Variable.css" />
+    <link rel="stylesheet" href="/src/common/index.css" />
+    <link rel="stylesheet" href="/src/ui/netflix-form/netflix-form.css" />
+    <script type="module" src="/src/ui/js/copy-component.js"></script>
+  </head>
+  <body>
+    <a href="/index.html">Index로 이동</a>
+    <h1>Nexflix Form</h1>
+    <h2>버튼</h2>
+    <div class="ui-component">
+      <button type="button" class="button button-fill icon">
+        버튼텍스트<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M15.3431 0.928941L21.7071 7.2929C22.0976 7.68343 22.0976 8.31659 21.7071 8.70712L15.3431 15.0711C14.9526 15.4616 14.3195 15.4616 13.9289 15.0711C13.5384 14.6806 13.5384 14.0474 13.9289 13.6569L18.5858 9.00001H1C0.447715 9.00001 0 8.55229 0 8.00001C0 7.44772 0.447715 7.00001 1 7.00001H18.5858L13.9289 2.34315C13.5384 1.95263 13.5384 1.31947 13.9289 0.928941C14.3195 0.538416 14.9526 0.538416 15.3431 0.928941Z"
+            fill="white"
+          />
+        </svg>
+      </button>
+      <button type="button" class="button button-fill rounded-xs">버튼텍스트</button>
+      <button type="button" class="button button-fill" disabled>버튼텍스트</button>
+      <button type="button" class="button button-outline">버튼텍스트</button>
+      <button class="button button-outline" type="button" disabled>버튼텍스트</button>
+      <button type="button" class="button button-none">버튼텍스트</button>
+    </div>
+    <h2>입력 서식</h2>
+    <div class="ui-component">
+      <div class="input-wrapper">
+        <div class="input">
+          <label for="inputNumber">레이블</label>
+          <input type="text" id="inputNumber" name="inputNumber" required />
+        </div>
+        <p>정확한 이메일 주소를 입력하세요.</p>
+      </div>
+    </div>
+  </body>
+</html>
