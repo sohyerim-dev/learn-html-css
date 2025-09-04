@@ -1,49 +1,119 @@
 body {
   margin: 20px;
 }
-
 .notification {
   --black: #121212;
   --green: #22be61;
-  --gray: #989a90;
+  --gray: #9b9a90;
   --white: #fff;
 
-  border: 1px solid var(--gray);
-  border-radius: 0.25rem;
+  --point-color: var(--green);
+  --text-color: var(--gray);
+  --bg-color: var(--white);
 
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  gap: 0 1.25rem;
+  border: 1px solid currentColor;
+  color: var(--text-color);
+  border-radius: 0.25rem;
   padding: 1.25rem;
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 1.25rem;
+  align-items: center;
 
   .notification-icon {
     flex: 0 0 auto;
-    flex-shrink: 0;
+
+    rect {
+      fill: var(--point-color);
+    }
   }
 
   .notification-content {
     flex: 1 1 0;
     display: flex;
-    justify-content: space-between;
     flex-flow: row wrap;
+    justify-content: space-between;
     row-gap: 4px;
 
+    strong,
+    time {
+      color: var(--point-color);
+    }
+
     strong {
-      font-size: 1.25rem;
-      color: var(--green);
+      font-size: 1.125rem;
+      font-weight: 700;
     }
 
     time {
       font-size: 0.6875rem;
-      margin-block-start: 0.25rem;
-      color: var(--green);
     }
 
     p {
-      font-size: 0.875rem;
       inline-size: 100%;
-      color: var(--gray);
+      font-size: 0.875rem;
+    }
+  }
+}
+
+/* 레이아웃 */
+/* .notification-wrapper {
+  background: #ffc;
+  display: flex;
+  --gap: 1.25rem;
+
+  @media (min-width: 1001px) {
+    flex-flow: row nowrap;
+    column-gap: var(--gap);
+
+    .notification {
+      flex-grow: 1;
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 1000px) {
+    flex-flow: row wrap;
+    gap: var(--gap);
+
+    .notification {
+      flex-grow: 1;
+    }
+  }
+
+  @media (max-width: 600px) {
+    flex-flow: column nowrap;
+    row-gap: var(--gap);
+
+    .notification {
+      flex-grow: 1;
+    }
+  }
+} */
+
+/* 선생님 레이아웃 */
+.notification-wrapper {
+  --gap: 30px;
+
+  /* border: 1px solid red; */
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: var(--gap);
+
+  @media (width > 600px) {
+    column-gap: var(--gap);
+  }
+  li {
+    display: contents;
+  }
+  .notification {
+    inline-size: 100%;
+
+    @media (width > 600px) {
+      inline-size: calc((100% - var(--gap) * 1) / 2);
+    }
+
+    @media (width > 1000px) {
+      inline-size: calc((100% - var(--gap) * 3) / 4);
     }
   }
 }
