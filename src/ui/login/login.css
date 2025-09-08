@@ -17,17 +17,13 @@
   --active-color: var(--blue-100);
 }
 
-/* body {
-  margin: 20px;
-} */
-
 /* Index로 이동 */
 body > a:nth-of-type(1) {
-  background: skyblue;
   position: fixed;
   inset-inline-start: 20px;
   inset-block-start: 20px;
 }
+
 /* 로고 컴포넌트 */
 .logo {
   display: inline-flex;
@@ -173,9 +169,9 @@ body > a:nth-of-type(1) {
 }
 
 /* 레이아웃 */
-/* 모바일 퍼스트 */
+/* 헤더 (로고) */
 .header {
-  margin: 70px 0 45px;
+  margin-block: 70px 45px;
   text-align: center;
 
   .logo {
@@ -207,26 +203,6 @@ body > a:nth-of-type(1) {
       inline-size: 100%;
     }
 
-    /* 상태 디자인 */
-    :focus {
-      outline: 0 none;
-    }
-
-    .input input:focus-visible {
-      border: 1px solid var(--green-100);
-      background: var(--blue-100);
-    }
-
-    .button:focus-visible {
-      box-shadow: 0 0 1px 2px #f00;
-    }
-
-    .checkbox-wrapper *:focus-visible {
-      outline: 2px solid var(--green-100);
-      outline-offset: 2px;
-      border-radius: 2px;
-    }
-
     .checkbox-wrapper {
       order: 1;
       display: flex;
@@ -235,8 +211,8 @@ body > a:nth-of-type(1) {
       align-items: center;
 
       @media (width<768px) {
-        /* .checkbox {
-        } */
+        .checkbox {
+        }
 
         .textlink-new,
         .switch {
@@ -265,6 +241,26 @@ body > a:nth-of-type(1) {
       justify-content: center;
       align-items: center;
       block-size: 56px;
+    }
+
+    /* 상태 디자인 */
+    :focus {
+      outline: 0 none;
+    }
+
+    .input input:focus-visible {
+      border: 1px solid var(--green-100);
+      background: var(--blue-100);
+    }
+
+    .button:focus-visible {
+      box-shadow: 0 0 1px 2px #f00;
+    }
+
+    .checkbox-wrapper *:focus-visible {
+      outline: 2px solid var(--green-100);
+      outline-offset: 2px;
+      border-radius: 2px;
     }
   }
 }
