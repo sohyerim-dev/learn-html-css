@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+:root {
+  --green-100: #03cc5c;
+  --green-200: #1bf008;
+  --green-300: #03cca8;
+
+  --gray-100: #bcc3c7;
+  --gray-200: #9b9a90;
+  --gray-300: #6d7478;
+
+  --start-color: var(--green-200);
+  --end-color: var(--green-300);
+}
+
+body {
+  margin: 20px;
+}
+
+/* 텍스트 로고 */
+/* 텍스트 로고 */
+.text-logo {
+  --size: 34.7504px;
+
+  display: inline-flex;
+  vertical-align: top;
+  justify-content: center;
+  align-items: center;
+  /* N 텍스트의 부모 요소의 크기를 글자크기의 70%로 설졍 (기본 자간 크기를 제거) */
+  inline-size: calc(var(--size) * 0.7);
+
+  .text {
+    background: #ffc;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    inline-size: var(--size);
+    font-size: var(--size);
+    line-height: 0.7;
+    font-weight: 900;
+    position: relative;
+    top: -0.005em;
+    left: -0.005em;
+    background: linear-gradient(135deg, var(--start-color), var(--end-color));
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* 입력 */
+
+.input {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 0.5em;
+
+  label {
+    flex: 0 0 auto;
+  }
+  input {
+    flex: 1 1 0;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    padding: 0.125em 0.5em;
+  }
+}
+
+/* 버튼 */
+.circle-gradient {
+  --size: 24px;
+  --start-color: var(--green-200);
+  --end-color: var(--green-300);
+
+  background: var(--start-color) linear-gradient(var(--start-color), var(--end-color));
+  inline-size: var(--size);
+  aspect-ratio: 1 / 1;
+  border: 0 none;
+  border-radius: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: '';
+    inline-size: calc(var(--size) / 3);
+    aspect-ratio: 1/1;
+    background: var(--white);
+    border-radius: inherit;
+  }
+}
+
+/* 검색바 */
+.search-bar {
+  --border-color: var(--green-100);
+  --shadow-color: var(--gray-100);
+
+  border: 1px solid var(--border-color);
+  border-radius: 100px;
+  padding: 12px 12px 12px 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 12px;
+
+  &:focus-within {
+    box-shadow: 0 5px 5px 0 var(--shadow-color);
+  }
+
+  .go-home {
+    flex: 0 0 auto;
+  }
+
+  form {
+    display: contents;
+  }
+
+  .input {
+    margin-inline-end: 4px;
+    flex: 1 1 0;
+  }
+
+  label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  input {
+    inline-size: 100%;
+    border: 0 none;
+    background: none;
+    appearance: none;
+    outline: 0;
+  }
+
+  /* X 버튼은 Safari, Chrome, Edge, Opera 등 webkit 및 blink 엔진을 사용하는 웹브라우저의 기본 스타일 */
+  /* X 버튼을 제거하고 싶다면 :-webkit-search-cancel-button 선택자를 사용하여 display 속성 값을 none으로 지정 */
+  [type='search']::-webkit-search-cancel-button {
+    display: none;
+  }
+
+  button {
+    flex: 0 0 auto;
+  }
+}

@@ -1,0 +1,12 @@
+body {
+  margin: 20px;
+  background: var(--gray);
+  color: var(--black);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--black);
+    color: var(--gray);
+  }
+}
