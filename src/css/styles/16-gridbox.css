@@ -1,0 +1,165 @@
+:root {
+  /* 파스텔 색상 */
+  --pink: #ffd1dc; /* 파스텔 핑크 */
+  --lavender: #e6e6fa; /* 파스텔 라벤더 */
+  --mint: #b2f2bb; /* 파스텔 민트 */
+  --blue: #a2ddf0; /* 파스텔 블루 */
+  --yellow: #fff9c4; /* 파스텔 옐로우 */
+  --coral: #ffb6c1; /* 파스텔 코랄 */
+  --green: #c8e6c9; /* 파스텔 그린 */
+  --purple: #d1c4e9; /* 파스텔 퍼플 */
+  --orange: #ffccbc; /* 파스텔 오렌지 */
+  --gray: #cfd8dc; /* 파스텔 그레이 */
+  --peach: #ffe5b4; /* 파스텔 피치 */
+  --lilac: #c8a2c8; /* 파스텔 라일락 */
+  --teal: #afeeee; /* 파스텔 틸 */
+  --rose: #ffc0cb; /* 파스텔 로즈 */
+  --sky-blue: #87ceeb; /* 파스텔 스카이 블루 */
+  --lemon: #fffacd; /* 파스텔 레몬 */
+  --mauve: #e0b0ff; /* 파스텔 모브 */
+  --aqua: #b2ebf2; /* 파스텔 아쿠아 */
+  --apricot: #fdd5b1; /* 파스텔 애프리콧 */
+  --ivory: #fffff0; /* 파스텔 아이보리 */
+  --dark-blue: #4a6ee0; /* 파스텔 다크블루 */
+  --dark-green: #03cc5c; /* 아바타 그린*/
+
+  --black: #121212;
+  --white: #fff;
+}
+
+body {
+  margin: 20px;
+}
+
+/* 그리도 셀 배경 색상 */
+.like,
+.lion,
+.euid,
+.frontend {
+  > div:nth-child(1) {
+    background: var(--pink);
+  }
+  > div:nth-child(2) {
+    background: var(--blue);
+  }
+  > div:nth-child(3) {
+    background: var(--coral);
+  }
+  > div:nth-child(4) {
+    background: var(--green);
+  }
+  > div:nth-child(5) {
+    background: var(--purple);
+  }
+  > div:nth-child(6) {
+    background: var(--gray);
+  }
+  > div:nth-child(7) {
+    background: var(--apricot);
+  }
+}
+
+/* 열과 행의 크기를 - percentage */
+.like {
+  background: yellow;
+  inline-size: 500px;
+  block-size: 200px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+/* 열과 행의 크기를 - fraction 단위 */
+.lion {
+  background: skyblue;
+  inline-size: 500px;
+  block-size: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+/* 열과 행의 크기를 - repeat() 함수 활용 */
+.euid {
+  background: orange;
+  inline-size: 500px;
+  block-size: 200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+
+  .euid1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 4;
+  }
+  .euid2 {
+    grid-row-start: 4;
+    grid-column-start: 4;
+    grid-row-end: 5;
+    grid-column-end: 5;
+  }
+  .euid3 {
+    grid-row-start: 1;
+    grid-column-start: 4;
+    grid-row-end: 2;
+    grid-column-end: 5;
+  }
+  .euid4 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+  }
+  .euid5 {
+    grid-row: 3 / 5;
+    grid-column: 2 / 4;
+  }
+  .euid6 {
+    grid-area: 2 / 4 / 4 / 5;
+    /* grid-row-start: 2;
+    grid-column-start: 4;
+    grid-row-end: 4;
+    grid-column-end: 5; */
+    /* grid-row: 2 / span 2; */
+  }
+  .euid7 {
+    grid-area: 4 / 1;
+  }
+}
+
+.frontend {
+  background:;
+  inline-size: 80%;
+  block-size: 200px;
+  display: grid;
+  /* grid-template-columns: repeat(6, minmax(100px, 1fr)); */
+  grid-template-columns: minmax(50px, 1fr) minmax(10rem, 1fr) minmax(15%, 1fr) minmax(100px, 1fr);
+  grid-template-rows: repeat(4, minmax(50px, 1fr));
+  grid-template-areas:
+    'box1 box1 box3 .'
+    'box1 box1 box6 box6'
+    'box4 box5 box5 box2'
+    'box7 box5 box5 box2';
+
+  .frontend1 {
+    grid-area: box1;
+  }
+  .frontend2 {
+    grid-area: box2;
+  }
+  .frontend3 {
+    grid-area: box3;
+  }
+  .frontend4 {
+    grid-area: box4;
+  }
+  .frontend5 {
+    grid-area: box5;
+  }
+  .frontend6 {
+    grid-area: box6;
+  }
+  .frontend7 {
+    grid-area: box7;
+  }
+}
