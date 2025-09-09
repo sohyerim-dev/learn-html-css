@@ -1,0 +1,157 @@
+/* 배경 색상 */
+.container {
+  background: silver;
+  min-block-size: 100vh;
+
+  .header {
+    background: yellow;
+  }
+
+  .main {
+    background: gray;
+  }
+
+  .book {
+    background: pink;
+  }
+
+  .news {
+    background: lightgreen;
+  }
+
+  .board {
+    background: salmon;
+  }
+
+  .favorite {
+    background: teal;
+  }
+
+  .twitter {
+    background: aqua;
+  }
+
+  .footer {
+    background: yellow;
+  }
+}
+
+/* 그리드 레이아웃 */
+.container {
+  display: grid;
+  grid-template-columns: [full-start] 20px [content-start] 1fr [content-end] 20px [full-end];
+  grid-template-rows: 100px repeat(5, 1fr) 100px;
+  /* 그리드 아이템 가운데 정렬 */
+  justify-content: center;
+
+  .header,
+  .book,
+  .news,
+  .board,
+  .favorite,
+  .twitter,
+  .footer {
+    grid-column: content;
+  }
+
+  .main {
+    display: contents;
+  }
+
+  @media (width>=960px) {
+    /* 14개의 컬럼을 마치 12개의 컬럼처럼 설계 */
+    /* 첫 번째 컬럼과 마지막 컬럼의 크기를 4px로 설정하면 16px의 Gap을 포함해 양쪽이 20px 여백이 있는 것처럼 표현할 수 있음 */
+    /* 첫 번째와 마지막 컬럼을 제와한 내부 12개의 컬럼의 최소 크기는 62px, 최대 크기는 82px로 설정하면 컨테이너의 최소 크기는 960px 최대 크기는 1200px이 됨 */
+    grid-template-columns: [full-start] 4px [content-start] repeat(12, minmax(62px, 82px)) [content-end] 4px [full-end];
+    grid-auto-rows: auto;
+    gap: 16px;
+
+    .book {
+      grid-column: content-start / span 4;
+    }
+
+    .news {
+      grid-column: span 8;
+    }
+
+    .board {
+      grid-column: content-start / span 4;
+    }
+
+    .twitter {
+      grid-column: span 6;
+    }
+
+    .favorite {
+      grid-column: span 2;
+      order: 1;
+    }
+
+    .footer {
+      order: 1;
+    }
+  }
+}
+
+/* 플렉스 레이아웃 */
+/* .container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  .header,
+  .main,
+  .footer {
+    max-inline-size: 1200px;
+    inline-size: 100%;
+  }
+
+  .header,
+  .footer {
+    block-size: 100px;
+    flex: 0 1 auto;
+  }
+
+  .header {
+  }
+
+  .main {
+    flex: 1 1 0;
+    display: flex;
+    flex-flow: row wrap;
+
+    .book,
+    .news,
+    .board,
+    .favorite,
+    .twitter {
+      inline-size: 100%;
+    }
+
+    @media (width>=960px) {
+      .book {
+        inline-size: 35%;
+      }
+
+      .news {
+        inline-size: 65%;
+      }
+
+      .board {
+        inline-size: 35%;
+      }
+
+      .favorite {
+        inline-size: 20%;
+        order: 1;
+      }
+
+      .twitter {
+        inline-size: 45%;
+      }
+    }
+  }
+
+  .footer {
+  }
+} */
