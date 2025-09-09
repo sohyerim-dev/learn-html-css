@@ -152,6 +152,12 @@ body > a:nth-of-type(1) {
     border: 1px solid var(--gray-200);
     padding-inline-start: 0.5em;
 
+    /* &:autofill,
+    &:-webkit-autofill {
+      box-shadow: 0 0 0px 1000px var(--white) inset;
+      -webkit-box-shadow: 0 0 0px 1000px var(--white) inset;
+    } */
+
     &:read-only {
       background: var(--gray-100);
     }
@@ -211,8 +217,8 @@ body > a:nth-of-type(1) {
       align-items: center;
 
       @media (width<768px) {
-        .checkbox {
-        }
+        /* .checkbox {
+        } */
 
         .textlink-new,
         .switch {
