@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>트랜지션 애니메이션</title>
+    <link rel="shortcut icon" href="/public/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <link rel="preload" as="font" href="/public/font/suit/SUIT-Variable.woff2" />
+    <link rel="stylesheet" href="/public/font/suit/SUIT-Variable.css" />
+    <link rel="stylesheet" href="/src/common/index.css" />
+    <link rel="stylesheet" href="/src/css/styles/19-transition-animation.css" />
+    <script type="module">
+      // DOM 선택부
+      const toggleButtons = document.querySelectorAll('.toggle');
+
+      // 함수 구현부
+      function toggleActiveOnSibling(button) {
+        const sibling = button.nextElementSibling;
+        if (!sibling) return;
+        sibling.classList.toggle('active');
+      }
+
+      // 이벤트 바인딩 영역
+      toggleButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          toggleActiveOnSibling(button);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <a href="/index.html">Index로 이동</a>
+    <h1>트랜지션 애니메이션</h1>
+    <div class="euid"><span>함께</span> <span>성장하는</span> <span>바른 교육</span> <span>이듬</span></div>
+    <div class="like">
+      <button type="button" class="toggle">Click!</button>
+      <div class="translate">이동하기</div>
+    </div>
+    <div class="lion">
+      <button type="button" class="toggle">Click!</button>
+      <div class="translate">이동하기</div>
+    </div>
+  </body>
+</html>

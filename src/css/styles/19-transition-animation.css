@@ -1,0 +1,48 @@
+body {
+  margin: 20px;
+}
+
+/* transition - :hover */
+.euid {
+  padding: 16px;
+  border: 1px solid currentColor;
+  inline-size: 500px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+
+  span {
+    background: lightgreen;
+    padding: 10px;
+    /* transition-property: background, inline-size;
+    transition-duration: 2s; */
+    width: 100px;
+    transition:
+      background 2s,
+      width 2s;
+
+    &:hover {
+      background: pink;
+      width: 150px;
+    }
+  }
+}
+
+.like {
+  padding: 10px;
+  border: 1px solid currentColor;
+
+  .translate {
+    inline-size: 200px;
+    block-size: 200px;
+    background-color: aqua;
+    text-align: center;
+    align-content: center;
+    transition-property: transform;
+    transition-duration: 2s;
+
+    &.active {
+      transform: translate(100px, 0);
+    }
+  }
+}

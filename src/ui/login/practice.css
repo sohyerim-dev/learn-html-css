@@ -1,0 +1,25 @@
+:root {
+  --white: #fff;
+  --green-100: #03cc5c;
+  --green-200: #1bf008;
+  --green-300: #03cca8;
+
+  --blue-100: #e9f0fd;
+  --red-100: #ff1414;
+
+  --gray-100: #bcc3c7;
+  --gray-200: #9b9a90;
+  --gray-300: #6d7478;
+
+  --primary-color: var(--green-100);
+  --start-color: var(--green-200);
+  --end-color: var(--green-300);
+  --active-color: var(--blue-100);
+}
+
+/* Index로 이동 */
+body > a:nth-of-type(1) {
+  position: fixed;
+  inset-inline-start: 20px;
+  inset-block-start: 20px;
+}
